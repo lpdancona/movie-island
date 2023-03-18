@@ -24,8 +24,8 @@ export default function List() {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${- 230 + distance}px)`;
     }
-  
-  };
+   };
+   
   return (
     <div className="list">
       <span className="listTitle">Continue to watch</span>
