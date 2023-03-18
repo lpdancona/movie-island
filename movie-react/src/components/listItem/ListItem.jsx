@@ -20,10 +20,12 @@ export default function ListItem({ index }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+
       <img
         src={imageSource}
         alt="CardPic"
       />
+      
       {isHovered && (
         <>
           <video src={trailer} autoPlay={true} loop />
