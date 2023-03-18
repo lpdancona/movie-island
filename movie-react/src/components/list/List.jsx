@@ -14,14 +14,15 @@ export default function List() {
 
   const handleClick = (direction) => {
     setIsMoved(true);
-    let distance = listRef.current.getBoundingClientRect().x - 50;
+    let distance = listRef.current.getBoundingClientRect().x - 58;
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
-      listRef.current.style.transform = `translateX(${230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${ 230 + distance}px)`;
     }
-    if (direction === "right" && slideNumber < 5) {
+    // console.log(distance)
+    if (direction === "right" && slideNumber < 8) {
       setSlideNumber(slideNumber + 1);
-      listRef.current.style.transform = `translateX(${-230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${- 230 + distance}px)`;
     }
   };
   return (
@@ -44,6 +45,13 @@ export default function List() {
           <ListItem index={7} />
           <ListItem index={8} />
           <ListItem index={9} />
+          <ListItem index={10} />
+          <ListItem index={11} />
+          <ListItem index={12} />
+          <ListItem index={13} />
+          <ListItem index={14} />
+          <ListItem index={15} />
+          
         </div>
         <ArrowForwardIosOutlined
           className="sliderArrow right"
