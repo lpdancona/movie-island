@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export default function ListItem({ index }) {
   const [isHovered, setIsHovered] = useState(false);
-  const trailer = video;
+  
   return (
     <div
       className="listItem"
@@ -26,7 +26,7 @@ export default function ListItem({ index }) {
       />
       {isHovered && (
         <>
-          <video src={trailer} autoPlay={true} loop />
+          <video src={video} autoPlay loop />
           <div className="itemInfo">
             <div className="icons">
               <PlayArrow className="icon" />

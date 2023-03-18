@@ -24,6 +24,7 @@ export default function List() {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${- 230 + distance}px)`;
     }
+  
   };
   return (
     <div className="list">
@@ -32,7 +33,7 @@ export default function List() {
         <ArrowBackIosOutlined
           className="sliderArrow left"
           onClick={() => handleClick("left")}
-          style={{ display: !isMoved && "none" }}
+          style={{ display: (!isMoved || slideNumber === 0) && "none" }}
         />
         <div className="container" ref={listRef}>
           <ListItem index={0} />
