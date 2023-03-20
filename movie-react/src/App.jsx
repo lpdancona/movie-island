@@ -8,8 +8,8 @@ function App() {
     // <div className="App">
     //   <Home />
     // </div>
-    // <Register/>
-    <Login/>
+    <Register/>
+    // <Login/>
   );
 }
 
