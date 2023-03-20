@@ -6,9 +6,9 @@
   top: 0;
   z-index: 999;
   background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
-  .page-name {
-    margin-right: 30px;
-    color: aqua;
+  .page-logo {
+    width: 150px;
+    height: 400px;
   }
   &.scrolled {
     background-color: var(--main-color);
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 100px;
 
     .left {
       display: flex;

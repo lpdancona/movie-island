@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
         <div className="left">
-          <h1 className="page-name">Movie Island</h1>
+          <img className="page-logo" src={logo} alt="" />
           <span>Homepage</span>
           <span>Series</span>
           <span>Movies</span>
