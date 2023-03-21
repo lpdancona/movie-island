@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./newMovie.scss";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const NewMovie = () => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -40,6 +40,9 @@ const NewMovie = () => {
 
   return (
     <div>
+      <Link to="/">
+        <button className="home-button">Home</button>
+      </Link>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input

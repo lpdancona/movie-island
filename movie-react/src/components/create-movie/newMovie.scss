@@ -24,7 +24,7 @@ form {
     transition: border-color 0.3s ease-in-out;
 
     &:focus {
-      border-color: #0077ff;
+      border-color: white;
     }
   }
 
@@ -37,7 +37,7 @@ form {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #0077ff;
+    background-color: darkblue;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -45,7 +45,50 @@ form {
     transition: background-color 0.3s ease-in-out;
     margin-bottom: 30px;
     &:hover {
-      background-color: #0060d6;
+      background-color: blue;
+    }
+  }
+}
+.home-button {
+  border: none;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken(blue, 15%);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover:not([disabled]) {
+    color: #fff;
+    &:before {
+      width: 100%;
     }
   }
 }
