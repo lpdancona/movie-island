@@ -52,7 +52,7 @@ router.delete("/:id", verify, async (req, res) => {
 });
 
 // GET
-router.delete("/:id", verify, async (req, res) => {
+router.get("/:id", verify, async (req, res) => {
   try {
     const movie = await Movie.findById(req.params.id);
 
@@ -63,7 +63,7 @@ router.delete("/:id", verify, async (req, res) => {
 });
 
 // GET RANDOM
-router.delete("/random", verify, async (req, res) => {
+router.get("/random", verify, async (req, res) => {
   const type = req.query.type;
   let movie;
   try {
