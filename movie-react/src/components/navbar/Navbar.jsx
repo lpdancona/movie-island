@@ -18,8 +18,12 @@ const Navbar = () => {
         <div className="left">
           <img className="page-logo" src={logo} alt="" />
           <span>Homepage</span>
+          <Link to="/series" className="link">
           <span>Series</span>
+          </Link>
+          <Link to="/movie" className="link">
           <span>Movies</span>
+          </Link>
           <span>New and Popular</span>
           <span>My List</span>
         </div>
