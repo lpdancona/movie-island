@@ -1,13 +1,18 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Featured from "../../components/featured/Featured";
 import "./home.scss";
 import List from "../../components/list/List";
-const home = ({type}) => {
+import axios from "axios";
+import ApiList from "../../components/apiList/ApiList";
+import ApiListItem from "../../components/apiListItem/ApiListItem";
+
+const Home = ({ type }) => {
   return (
     <div className="home">
       <Navbar />
       <Featured type={type} />
+      <ApiList />
       <List />
       <List />
       <List />
@@ -16,4 +21,4 @@ const home = ({type}) => {
   );
 };
 
-export default home;
+export default Home;
