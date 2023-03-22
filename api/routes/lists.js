@@ -4,8 +4,8 @@ const verify = require("../verifyToken");
 
 // CREATE
 
-router.post("/", verify, async (req, res) => {
-  if (req.user.isAdmin) {
+router.post("/", async (req, res) => {
+  
     const newList = new List(req.body);
 
     try {
@@ -14,26 +14,22 @@ router.post("/", verify, async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
-  } else {
-    res.status(403).json(" You are not allowed!");
-  }
+  
 });
 
 // DELET
-router.delete("/:id", verify, async (req, res) => {
-  if (req.user.isAdmin) {
+router.delete("/:id", async (req, res) => {
+
     try {
       await List.findByIdAndDelete(req.params.id);
       res.status(201).json("The list has been deleted...");
     } catch (err) {
       res.status(500).json(err);
     }
-  } else {
-    res.status(403).json(" You are not allowed!");
-  }
+  
 });
 // GET
-router.get("/", verify, async (req, res) => {
+router.get("/", async (req, res) => {
   const typeQuery = req.query.type;
   const genreQuery = req.query.genre;
   let list = [];
