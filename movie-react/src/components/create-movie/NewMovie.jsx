@@ -43,7 +43,7 @@ const NewMovie = () => {
       <Link to="/">
         <button className="home-button">Home</button>
       </Link>
-      <form onSubmit={handleSubmit}>
+      <form className="form-new" onSubmit={handleSubmit}>
         <label>Title</label>
         <input
           type="text"

@@ -6,10 +6,9 @@ function Search() {
   const API_URL = "https://api.themoviedb.org/3";
   const [movies, setMovies] = useState([]);
   const [searchKey, setSearchKey] = useState("");
-  const fetchMovies = async (searchKey) => {
-    setSearchKey("Avatar");
+  const fetchMovies = async () => {
     const type = searchKey.length > 1 ? "search" : "discover";
-    const URL = `${API_URL}/${type}/movie`;
+    const URL = `${API_URL}/search/movie`;
     console.log(URL);
     const {
       data: { results },
@@ -22,7 +21,7 @@ function Search() {
     setMovies(results);
   };
   useEffect(() => {
-    fetchMovies(searchKey);
+    fetchMovies();
   }, []);
   console.log(searchKey.lenght);
   const renderMovies = () => {
