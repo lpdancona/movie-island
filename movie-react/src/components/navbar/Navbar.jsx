@@ -33,7 +33,9 @@ const Navbar = () => {
           <Link to="/movies">
             <button className="new-movie-button">New Movie</button>
           </Link>
-          <Search className="icon" />
+          <Link to="/search" className="link">
+            <Search className="icon" />
+          </Link>
           <span>KIDS</span>
           <Notifications className="icon" />
           <img

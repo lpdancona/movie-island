@@ -62,7 +62,9 @@ const NewMovie = () => {
             <Link to="/">
               <button className="new-movie-button">Home</button>
             </Link>
-            <Search className="icon" />
+            <Link to="/search" className="link">
+              <Search className="icon" />
+            </Link>
             <span>KIDS</span>
             <Notifications className="icon" />
             <img
@@ -79,7 +81,7 @@ const NewMovie = () => {
           </div>
         </div>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form className="form-new" onSubmit={handleSubmit}>
         <label>Title</label>
         <input
           type="text"

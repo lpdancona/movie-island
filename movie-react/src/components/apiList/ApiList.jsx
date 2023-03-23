@@ -32,7 +32,7 @@ export default function ApiList() {
       method: "GET",
       url: "https://imdb-top-100-movies.p.rapidapi.com/",
       headers: {
-        "X-RapidAPI-Key": "1416ae6cc8msh96230c5d9530d84p195177jsn4ee7b31785e8",
+        "X-RapidAPI-Key": "e57e689fcemsh86edc713520fcdap1938a7jsnc24238f337f8",
         "X-RapidAPI-Host": "imdb-top-100-movies.p.rapidapi.com",
       },
     };

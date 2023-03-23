@@ -6,7 +6,6 @@ import List from "../../components/list/List";
 import axios from "axios";
 import ApiList from "../../components/apiList/ApiList";
 import ApiListItem from "../../components/apiListItem/ApiListItem";
-
 const Home = ({ type }) => {
   const [lists, setLists] = useState([]);
   const [genre, setGenre] = useState(null);
