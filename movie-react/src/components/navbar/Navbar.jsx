@@ -15,14 +15,16 @@ const Navbar = () => {
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
       <div className="container">
+        <img className="page-logo" src={logo} alt="" />
         <div className="left">
-          <img className="page-logo" src={logo} alt="" />
-          <span>Homepage</span>
+          <Link to="/" className="link">
+            <span>Homepage</span>
+          </Link>
           <Link to="/series" className="link">
-          <span>Series</span>
+            <span>Series</span>
           </Link>
           <Link to="/movie" className="link">
-          <span>Movies</span>
+            <span>Movies</span>
           </Link>
           <span>New and Popular</span>
           <span>My List</span>

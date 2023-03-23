@@ -27,12 +27,12 @@ const Home = ({ type }) => {
     };
     getRandomLists();
   }, [type, genre]);
-
+  console.log(type);
   return (
     <div className="home">
       <Navbar />
       <Featured type={type} />
-      <ApiList />
+      {type === undefined && <ApiList />}
       {lists.map((list) => (
         <List key={list._id} list={list} />
       ))}

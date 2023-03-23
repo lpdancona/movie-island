@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./newMovie.scss";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import logo from "../../assets/logo.png";
 const NewMovie = () => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -40,9 +42,43 @@ const NewMovie = () => {
 
   return (
     <div>
-      <Link to="/">
-        <button className="home-button">Home</button>
-      </Link>
+      <div className="navbar">
+        <div className="container">
+          <img className="page-logo" src={logo} alt="" />
+          <div className="left">
+            <Link to="/" className="link">
+              <span>Homepage</span>
+            </Link>
+            <Link to="/series" className="link">
+              <span>Series</span>
+            </Link>
+            <Link to="/movie" className="link">
+              <span>Movies</span>
+            </Link>
+            <span>New and Popular</span>
+            <span>My List</span>
+          </div>
+          <div className="right">
+            <Link to="/">
+              <button className="new-movie-button">Home</button>
+            </Link>
+            <Search className="icon" />
+            <span>KIDS</span>
+            <Notifications className="icon" />
+            <img
+              src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              alt=""
+            />
+            <div className="profile">
+              <ArrowDropDown className="icon" />
+              <div className="options">
+                <span>Settings</span>
+                <span>Logout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input
