@@ -10,6 +10,7 @@
   .page-logo {
     width: 200px;
     height: 50px;
+    border: black 2px solid;
   }
   &.scrolled {
     background-color: var(--main-color);
@@ -23,8 +24,10 @@
     height: 100px;
 
     .left {
+      font-size: 20px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       img {
         height: 25px;
         margin-right: 40px;
