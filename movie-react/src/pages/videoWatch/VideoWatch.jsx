@@ -1,7 +1,13 @@
 import { ArrowBackOutlined } from "@material-ui/icons";
 import "./videoWatch.scss";
-import videoSource from "../../assets/video.mp4"
+import { useSearchParams } from "react-router-dom";
+
+
+
 export default function VideoWatch() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const src = searchParams.get("src") 
+
 
   return (
     <div className="watch">
@@ -14,7 +20,7 @@ export default function VideoWatch() {
         autoPlay
         progress
         controls
-        src={videoSource}
+        src={src}
       />
     </div>
   );

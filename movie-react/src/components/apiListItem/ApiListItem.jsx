@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export default function ApiListItem({ index, movie }) {
   const [isHovered, setIsHovered] = useState(false);
-  console.log(movie);
+  
   return (
     <div
       className="listItem"
@@ -26,8 +26,8 @@ export default function ApiListItem({ index, movie }) {
           <iframe
             width="100%"
             height="150"
-            src={movie.trailer}
-            allow="autoplay; encrypted-media"
+            src={`${movie.trailer}?autoplay=1&mute=1&controls=0&modestbranding=1`}
+            allow="autoplay"
             allowFullScreen
             autoPlay={true}
           />

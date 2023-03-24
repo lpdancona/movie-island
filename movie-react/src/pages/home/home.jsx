@@ -15,11 +15,11 @@ const Home = ({ type }) => {
     const getRandomLists = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3001/api/lists${type ? "?type=" + type : ""}${
+          `/lists${type ? "?type=" + type : ""}${
             genre ? "genre=" + genre : ""
           }`
         );
-        console.log(res);
+        
         setLists(res.data);
       } catch (err) {
         console.log(err);
