@@ -1,6 +1,7 @@
 import React from "react";
 import "./featured.scss";
 import { PlayArrow, InfoOutlined } from "@material-ui/icons";
+import avatarLogo from "../../assets/avatar-logo.png";
 export default function Featured({ type }) {
   return (
     <div className="featured">
@@ -9,10 +10,7 @@ export default function Featured({ type }) {
         alt=""
       />
       <div className="info">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Avatar-Logo-avatar.svg/800px-Avatar-Logo-avatar.svg.png?20100209153655"
-          alt=""
-        />
+        <img className="info-logo" src={avatarLogo} alt="" />
         <span className="desc">
           A paraplegic Marine dispatched to the moon Pandora on a unique mission
           becomes torn between following his orders and protecting the world he
