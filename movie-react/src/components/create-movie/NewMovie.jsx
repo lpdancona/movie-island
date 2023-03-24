@@ -33,7 +33,7 @@ const NewMovie = () => {
         genre,
         isSeries,
       };
-      await axios.post("http://localhost:3001/api/movies", newMovie);
+      await axios.post("/movies", newMovie);
       window.location.reload();
     } catch (err) {
       console.log(err);

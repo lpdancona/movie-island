@@ -46,7 +46,7 @@ export default function ApiList() {
         console.error(error);
       });
   }, []);
-  console.log(movies);
+ 
   return (
     <div className="list">
       <span className="listTitle">Top 100 All Time Movies</span>
