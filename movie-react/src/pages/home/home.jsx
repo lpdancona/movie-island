@@ -6,6 +6,7 @@ import List from "../../components/list/List";
 import axios from "axios";
 import ApiList from "../../components/apiList/ApiList";
 import ApiListItem from "../../components/apiListItem/ApiListItem";
+import Footer from "../../components/footer/Footer";
 const Home = ({ type }) => {
   const [lists, setLists] = useState([]);
   const [genre, setGenre] = useState(null);
@@ -35,6 +36,7 @@ const Home = ({ type }) => {
       {lists.map((list) => (
         <List key={list._id} list={list} />
       ))}
+      <Footer />
     </div>
   );
 };

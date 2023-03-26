@@ -3,7 +3,7 @@ import axios from "axios";
 import "./search.scss";
 import MovieCard from "../movie-card/MovieCard";
 import Navbar from "../navbar/Navbar";
-
+import Footer from "../footer/Footer";
 function Search() {
   const API_URL = "https://api.themoviedb.org/3";
   const [movies, setMovies] = useState([]);
@@ -59,6 +59,7 @@ function Search() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

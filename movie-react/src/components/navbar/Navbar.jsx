@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import { ArrowDropDown, Search } from "@material-ui/icons";
 import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 

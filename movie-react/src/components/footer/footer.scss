@@ -1,0 +1,39 @@
+#footer {
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+  height: 350px;
+  margin-bottom: 0;
+  width: 100%;
+}
+.restaurant-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+  cursor: pointer;
+}
+.fa-square-instagram:hover {
+  color: #b727c0;
+}
+.fa-square-facebook:hover {
+  color: #4967aa;
+}
+.fa-square-twitter:hover {
+  color: #50abf1;
+}
+.visit-us,
+.hours,
+.social {
+  margin-top: 30px;
+}
+.copyrigth {
+  font-size: small;
+  text-align: center;
+  margin-top: 5%;
+}
