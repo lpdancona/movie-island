@@ -18,14 +18,14 @@ export default function Featured({ type }) {
           becomes torn between following his orders and protecting the world he
           feels is his home.
         </span>
-        <Link to="https://www.youtube.com/watch_popup?v=5PSNL1qE6VY&autoplay=1">
-          <div className="buttons">
+        <div className="buttons">
+          <Link to="https://www.youtube.com/watch_popup?v=5PSNL1qE6VY&autoplay=1">
             <button className="play">
               <PlayArrow />
-              <span>Play</span>
+              <span className="button-text">Play</span>
             </button>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </div>
   );
