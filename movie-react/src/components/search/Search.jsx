@@ -50,7 +50,7 @@ function Search() {
               onChange={(e) => setSearchKey(e.target.value)}
               placeholder="Search for a movie"
             />
-            <button type={"submit"}>Search</button>
+            <button type={"submit"} className="search" >Search</button>
           </form>
         </header>
         <div className="container-search">

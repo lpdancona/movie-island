@@ -52,7 +52,7 @@ form {
   display: inline-block;
   margin-bottom: 30px;
 }
-button[type="submit"] {
+.search {
   background-color: darken(gray, 15%);
   color: #fff;
   border: none;
@@ -62,7 +62,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.search:hover {
   background-color: darken(gray, 15%);
 }
 
