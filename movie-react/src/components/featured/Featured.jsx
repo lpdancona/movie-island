@@ -1,7 +1,9 @@
 import React from "react";
 import "./featured.scss";
-import { PlayArrow, InfoOutlined } from "@material-ui/icons";
+import { PlayArrow } from "@material-ui/icons";
 import avatarLogo from "../../assets/avatar-logo.png";
+import { Link } from "react-router-dom";
+
 export default function Featured({ type }) {
   return (
     <div className="featured">
@@ -16,12 +18,14 @@ export default function Featured({ type }) {
           becomes torn between following his orders and protecting the world he
           feels is his home.
         </span>
-        <div className="buttons">
-          <button className="play">
-            <PlayArrow />
-            <span>Play</span>
-          </button>
-        </div>
+        <Link to="https://www.youtube.com/watch_popup?v=5PSNL1qE6VY&autoplay=1">
+          <div className="buttons">
+            <button className="play">
+              <PlayArrow />
+              <span>Play</span>
+            </button>
+          </div>
+        </Link>
       </div>
     </div>
   );
