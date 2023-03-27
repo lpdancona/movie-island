@@ -40,14 +40,10 @@ export default function ListItem({ index, item }) {
 
         {isHovered && (
           <>
-            <video src={movie.trailer} autoPlay loop />
+            <video src={movie.trailer} autoPlay loop muted />
             <div className="itemInfo">
               <div className="icons">
                 <span>{movie.title}</span>
-                {/* <PlayArrow className="icon" />
-              <Add className="icon" />
-              <ThumbUpAltOutlined className="icon" />
-              <ThumbDownOutlined className="icon" /> */}
               </div>
               <div className="itemInfoTop">
                 <span>{movie.duration}</span>
