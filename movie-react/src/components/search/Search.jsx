@@ -38,7 +38,7 @@ function Search() {
   };
 
   return (
-    <div>
+    <div className="search-body">
       <Navbar />
       <div className="search">
         <header>
@@ -50,7 +50,9 @@ function Search() {
               onChange={(e) => setSearchKey(e.target.value)}
               placeholder="Search for a movie"
             />
-            <button type={"submit"}>Search</button>
+            <button type={"submit"} className="search-a">
+              Search
+            </button>
           </form>
         </header>
         <div className="container-search">
