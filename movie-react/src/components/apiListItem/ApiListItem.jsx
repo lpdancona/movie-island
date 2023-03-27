@@ -1,13 +1,4 @@
 import "./apiListItem.scss";
-import video from "../../assets/video.mp4";
-import imageSource from "../../assets/card.png";
-
-import {
-  PlayArrow,
-  Add,
-  ThumbUpAltOutlined,
-  ThumbDownOutlined,
-} from "@material-ui/icons";
 import { useState } from "react";
 
 export default function ApiListItem({ index, movie }) {
@@ -34,10 +25,6 @@ export default function ApiListItem({ index, movie }) {
           <div className="itemInfo">
             <div className="icons">
               <span>{movie.title}</span>
-              {/* <PlayArrow className="icon" />
-              <Add className="icon" />
-              <ThumbUpAltOutlined className="icon" />
-              <ThumbDownOutlined className="icon" /> */}
             </div>
             <div className="itemInfoTop">
               <span>Rating: {movie.rating}</span>

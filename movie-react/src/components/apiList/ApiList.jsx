@@ -18,12 +18,12 @@ export default function ApiList() {
     let distance = listRef.current.getBoundingClientRect().x - 58;
     if (direction === "left" && slideNumber > 0) {
       setSlideNumber(slideNumber - 1);
-      listRef.current.style.transform = `translateX(${230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${1150 + distance}px)`;
     }
-    // console.log(distance)
+    
     if (direction === "right" && slideNumber < 50) {
       setSlideNumber(slideNumber + 1);
-      listRef.current.style.transform = `translateX(${-230 + distance}px)`;
+      listRef.current.style.transform = `translateX(${-1150 + distance}px)`;
     }
   };
 

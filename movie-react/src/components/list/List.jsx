@@ -19,7 +19,7 @@ export default function List({ list }) {
       setSlideNumber(slideNumber - 1);
       listRef.current.style.transform = `translateX(${230 + distance}px)`;
     }
-    // console.log(distance)
+    
     if (direction === "right" && slideNumber < 8) {
       setSlideNumber(slideNumber + 1);
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
