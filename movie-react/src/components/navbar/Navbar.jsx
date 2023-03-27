@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <div className="right">
           <Link to="/movies">
-            <button className="new-movie-button">New Movie</button>
+            <button className="new-movie-button">Upload Movie</button>
           </Link>
           <Link to="/search" className="link">
             <Search className="icon" />
