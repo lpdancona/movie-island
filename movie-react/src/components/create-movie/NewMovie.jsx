@@ -41,7 +41,7 @@ const NewMovie = () => {
   };
 
   return (
-    <div className="body">
+    <div className="body-newMovie">
       <div className="main">
         <Navbar />
         <h1 className="DText">Post A Movie</h1>
@@ -112,14 +112,17 @@ const NewMovie = () => {
               />
             </Row>
           </Container>
-          <Container className="check">
-            <label className="isSeries">Is Series?</label>
-            <input
-              className="checkbox"
+
+          <div className="check-container">
+            
+            <label for='checkboxID' className="checkboxes"><input
+              id="checkboxID"
+              className="checkboxes"
               type="checkbox"
               onChange={(e) => setIsSeries(e.target.checked)}
-            />
-          </Container>
+            />Is Series?</label>
+          </div>
+
           <button type="submit" className="subBtn">
             Create
           </button>

@@ -42,7 +42,7 @@ function Search() {
       <Navbar />
       <div className="search">
         <header>
-          <h1>Find a Movie</h1>
+          <h1 className="DText">Find a Movie</h1>
 
           <form onSubmit={searchMovies}>
             <input

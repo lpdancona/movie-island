@@ -9,11 +9,10 @@ body {
   box-sizing: border-box;
 }
 
-.body {
+.body-newMovie {
   flex: 1;
   width: 100vw;
-  min-height: 100vh;
-  max-height: fit-content;
+  height: 100vh;
   background-color: #111;
   color: #fff;
   padding-top: 100px;
@@ -33,6 +32,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+
   &:after {
     content: "";
     position: absolute;
@@ -44,6 +44,7 @@ body {
     border-radius: 10rem;
     z-index: -2;
   }
+
   &:before {
     content: "";
     position: absolute;
@@ -56,13 +57,16 @@ body {
     border-radius: 10rem;
     z-index: -1;
   }
+
   &:hover:not([disabled]) {
     color: #fff;
+
     &:before {
       width: 100%;
     }
   }
 }
+
 //3DText
 .DText {
   display: flex;
@@ -71,8 +75,9 @@ body {
   line-height: 1em;
   color: #ffffff;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 3.5em ;
 }
+
 // form
 .mainContainer {
   width: 100%;
@@ -81,12 +86,14 @@ body {
   justify-content: center;
   text-align: center;
 }
+
 .row {
   width: 90% !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
+  margin-left: 60px;
   flex-direction: column;
   justify-content: center;
 }
@@ -97,8 +104,9 @@ body {
   justify-content: center;
   max-width: 80%;
   margin: 0 auto;
-  margin-top: 120px;
+  margin-top: 30px;
 }
+
 input {
   width: 85%;
 }
@@ -147,10 +155,11 @@ textarea:focus {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin: 40px auto;
+  align-items: center;
+  margin: 0 auto !important;
   position: relative;
 }
+
 .subBtn:hover {
   transition: 1000ms;
   padding: 10px 50px;
@@ -161,28 +170,29 @@ textarea:focus {
   text-shadow: 2px 2px 10px rgb(152, 63, 63);
 }
 
-.check {
-  margin: 20px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+.check-container {
+  margin-bottom: 20px;
+
+  .checkboxes {
+    width: fit-content;
+    margin:10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+  }
+  #checkboxID{
+    
+    width: 20px;
+    height: 20px;
+  }
 }
-.isSeries {
-  margin-top: 70px;
-  text-align: center;
-}
-.checkbox {
-  position: absolute;
-  top: 100px;
-  right: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-}
+
 .form-main {
   display: flex;
 }
+
 .form-new {
   display: flex;
   flex-direction: column;
@@ -228,15 +238,19 @@ button[type="submit"] {
     flex-direction: row;
   }
 }
+
 .form-new {
-  font-size: 20px; /* increase the font size for the form */
+  font-size: 20px;
+  /* increase the font size for the form */
   /* ...other CSS rules... */
 }
 
 .form-main label {
-  font-size: 30px; /* increase the font size for the labels */
+  font-size: 30px;
+  /* increase the font size for the labels */
 }
 
 .form-main input {
-  font-size: 30px; /* increase the font size for the input fields */
+  font-size: 30px;
+  /* increase the font size for the input fields */
 }
