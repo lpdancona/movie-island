@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.scss";
 import { ArrowDropDown, Search } from "@material-ui/icons";
 import logo from "../../assets/logo.png";
+import profileImage from "../../assets/profile.png"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -35,7 +36,7 @@ const Navbar = () => {
             <Search className="icon" />
           </Link>
           <img
-            src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src={profileImage}
             alt=""
           />
           <div className="profile">
